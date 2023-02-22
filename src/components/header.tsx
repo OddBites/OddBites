@@ -11,7 +11,7 @@ const Header: React.FC = () => {
         ODD BITES
       </div>
       <div className={styles.searchBar}>
-        <input type="text" placeholder="Search restaurants..."/>
+        <input type="text" placeholder="Search restaurants..." className={styles.searchInput}/>
         <div className={styles.searchIcon}>
           <FontAwesomeIcon icon={faSearch} />
         </div>
