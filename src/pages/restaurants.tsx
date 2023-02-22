@@ -7,9 +7,18 @@ const Restaurants: React.FC = () => {
   return (
     <div>
       <Header />
-      <div style={{ display: 'flex' }}>
-        <Column />
-        <PopularEats />
+      <div style={{ display: 'grid' }}>
+         <div className='ColumnGrid'>
+            <Column />
+         </div>
+         <div className='MapGrid'>
+            /MapComponent
+         </div>
+         <div className='PopularEats-FavoritesGrid'>
+            <PopularEats />
+            /FavoritesComponent
+         </div>
+
       </div>
     </div>
   );
