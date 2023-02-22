@@ -1,7 +1,10 @@
 {
   "version": 2,
+  "github": {
+    "enabled": false
+  },
   "builds": [
-    { "src": "package.json", "use": "@vercel/static-build", "config": { "buildCommand": "npm run build" } }
+    { "src": "./src/**", "use": "@vercel/static-build", "config": { "buildCommand": "npm run build" } }
   ],
   "routes": [
     { "src": "/(.*)", "dest": "public/$1" }
