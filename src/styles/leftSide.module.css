@@ -1,0 +1,17 @@
+.bar {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5em;
+}
+
+.name {
+    font-weight: lighter;
+}
+
+.address {
+    margin-left: 0.5em;
+}
+
+.description {
+    font-size: 0.75em;
+}
