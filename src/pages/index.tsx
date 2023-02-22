@@ -25,3 +25,18 @@ export default function Home() {
     </>
   )
 }
+
+export function TopBar() {
+  return (
+    <div className={styles.topBar}>
+      <div className={styles.title}>ODD BITES</div>
+      <div className={styles.search}>
+        <input type="text" placeholder="Search" />
+        <button>Search</button>
+      </div>
+      <div className={styles.settings}>
+        <i className="fa fa-cog"></i>
+      </div>
+    </div>
+  );
+}
