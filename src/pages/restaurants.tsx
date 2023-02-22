@@ -7,7 +7,7 @@ const Restaurants: React.FC = () => {
   return (
     <div>
       <Header />
-      <div>
+      <div style={{ display: 'flex' }}>
         <Column />
         <PopularEats />
       </div>

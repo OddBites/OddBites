@@ -3,6 +3,8 @@ import Image from 'next/image'
 import { Inter } from '@next/font/google'
 import styles from '@/styles/Home.module.css'
 import App from './_app'
+import Link from 'next/link';
+import { useRouter } from 'next/router';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -18,25 +20,10 @@ export default function Home() {
       <main className={styles.main}>
       <div className={styles.description}>
           <p>
-            Hello World!
+            Hello Everyone!
           </p>
           </div>
     </main>
     </>
   )
-}
-
-export function TopBar() {
-  return (
-    <div className={styles.topBar}>
-      <div className={styles.title}>ODD BITES</div>
-      <div className={styles.search}>
-        <input type="text" placeholder="Search" />
-        <button>Search</button>
-      </div>
-      <div className={styles.settings}>
-        <i className="fa fa-cog"></i>
-      </div>
-    </div>
-  );
 }
