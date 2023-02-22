@@ -34,8 +34,18 @@
   }
   
   .searchIcon {
-    margin-right: 0px;
-    color: var(--color-white);
+    position: relative;
+/* left: 76.77%;
+right: 18.02%;
+top: 1.16%;
+bottom: 95.52%; */
+
+    background: #03DAC5;
+    border-radius: 0px 25px 25px 0px;
+    /* height: ; */
+    /* margin-right: 0px; */
+    /* border-radius: 0 18px 18px 0 ; */
+    color: var(--color-greenery);
   }
 
   .settings {
