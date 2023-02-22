@@ -4,7 +4,7 @@
     "enabled": false
   },
   "builds": [
-    { "src": "src/pages/*.{js,jsx,ts,tsx}", "use": "@vercel/next" }
+    { "src": "package.json", "use": "@vercel/next" }
   ],
   "routes": [
     { "src": "/(.*)", "dest": "public/$1" }
