@@ -1,6 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:wght@300;400;500;600;700&display=swap');
 :root {
     --color-greenery: #018786;
     --color-white: #ffffff;
     --color-lightgreen: #03DAC5;
+  }
+
+  body {
+    font-family: 'Roboto Flex', sans-serif;
   }
