@@ -34,8 +34,8 @@
   }
   
   .searchIcon {
-    margin-right: 8px;
-    color: var(--color-lightgreen);
+    margin-right: 0px;
+    color: var(--color-greenery);
   }
 
   .settings {

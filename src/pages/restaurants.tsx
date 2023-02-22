@@ -1,13 +1,16 @@
 import React from 'react';
 import Header from '../components/header';
 import Column from '../components/column';
-import styles from '../styles/restaurants.module.css';
+import PopularEats from '../components/popularEats';
 
 const Restaurants: React.FC = () => {
   return (
-    <div className={styles.container}>
+    <div>
       <Header />
-      <Column />
+      <div>
+        <Column />
+        <PopularEats />
+      </div>
     </div>
   );
 };
