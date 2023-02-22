@@ -4,7 +4,7 @@
     "enabled": false
   },
   "builds": [
-    { "src": ".", "use": "@vercel/static-build", "config": { "buildCommand": "npm run build" } }
+    { "src": ".", "use": "@vercel/next" }
   ],
   "routes": [
     { "src": "/(.*)", "dest": "public/$1" }
