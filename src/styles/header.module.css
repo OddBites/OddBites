@@ -1,0 +1,45 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 0 16px;
+    background-color: var(--color-greenery);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  }
+  
+  .logo {
+    font-weight: bold;
+    font-size: 24px;
+    font-family: 'Roboto';
+    letter-spacing: 0.2em;
+    color: var(--color-white);
+  }
+  
+  .searchBar {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    height: 36px;
+    border-radius: 18px;
+    width: 50%;
+    padding: 0 12px;
+  }
+  
+  .searchInput {
+    flex: 1;
+    border: none;
+    background-color: transparent;
+    outline: none;
+  }
+  
+  .searchIcon {
+    margin-right: 0px;
+    color: var(--color-greenery);
+  }
+
+  .settings {
+    display: flex;
+    align-items: center;
+    color:  var(--color-white);
+  }
