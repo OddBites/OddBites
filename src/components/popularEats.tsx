@@ -36,6 +36,7 @@ const PopularEats: React.FC = () => {
             name={restaurant.name}
             description={restaurant.description}
             image={restaurant.image}
+            id = '[id]'
           />
         ))}
       </div>
