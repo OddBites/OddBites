@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../styles/menuContainer.module.css';
+import styles from '../styles/MenuContainer.module.css';
 import MenuItem from './MenuItem';
 
 interface MenuContainerProps {

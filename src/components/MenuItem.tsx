@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../styles/menuItem.module.css';
+import styles from '../styles/MenuItem.module.css';
 
 interface MenuItemProps {
   src: string;
