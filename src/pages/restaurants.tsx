@@ -2,19 +2,23 @@ import React from 'react';
 import Header from '../components/header';
 import Column from '../components/column';
 import PopularEats from '../components/popularEats';
+import GoogleMap from '../components/GoogleMap';
+import styles from '../styles/restaurants.module.css';
 
 const Restaurants: React.FC = () => {
   return (
     <div>
-      <Header />
-      <div style={{ display: 'grid' }}>
-         <div className='ColumnGrid'>
+      <div className={styles.body}>
+         <div className={styles.header}>
+            <Header />
+      </div>
+         <div className={styles.leftSide}>
             <Column />
          </div>
-         <div className='MapGrid'>
-            /MapComponent
+         <div className={styles.topSide}>
+            <GoogleMap />
          </div>
-         <div className='PopularEats-FavoritesGrid'>
+         <div className={styles.bottomSide}>
             <PopularEats />
             /FavoritesComponent
          </div>
