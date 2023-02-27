@@ -1,0 +1,21 @@
+.itemContainer {
+    border: 0.25em solid lightgrey;
+    border-radius: 1em;
+    margin: 1em;
+    padding: 0.5em;
+    text-align: left;
+    background-color: whitesmoke;
+}
+
+.name {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.kcal {
+    font-style: italic;
+}
+
+.description {
+    text-align: justify;
+}
