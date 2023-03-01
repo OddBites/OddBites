@@ -12,7 +12,7 @@ const RestaurantDetails = ({ r }) => {
         <h3>Items</h3>
         {
           r.menu.map((item) => (
-            <MenuItem item={item} />
+            <MenuItem key={item.id} item={item} />
           ))
         }
       </div>
@@ -20,7 +20,7 @@ const RestaurantDetails = ({ r }) => {
         <h3>Reviews</h3>
         {
           r.reviews.map((review) => (
-            <UserReview review={review} />
+            <UserReview key={review.id} review={review} />
           ))
         }
       </div>

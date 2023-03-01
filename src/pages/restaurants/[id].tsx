@@ -20,6 +20,12 @@ const restaurant = {
     { id: 0, author: "Patty Schwab", rating: 4.5, content: "Man I love McDonal!" },
     { id: 1, author: "Hanabi", rating: 2, content: "I can get better burgers at Walmart for half the price." },
     { id: 2, author: "佐藤田中", rating: 3.5, content: "Shammy Shakeは美味しい!" }
+  ],
+  slides: [
+    { id: 0, src: "https://dmn-dallas-news-prod.cdn.arcpublishing.com/resizer/nvrw3QS6dVzaqOpBVNf1vUFTdZQ=/1660x934/smart/filters:no_upscale()/cloudfront-us-east-1.images.arcpublishing.com/dmn/TL3H5R425ZBSFK32UYDI2F62LA.jpg" },
+    { id: 1, src: "https://s41230.pcdn.co/wp-content/uploads/2021/12/McDonalds-Net-Zero-restaurant-HEADER.jpg" },
+    { id: 2, src: "https://mcdonaldsblog.in/wp-content/uploads/2016/04/McDonalds_Restaurant.jpg" },
+    { id: 3, src: "https://www.gannett-cdn.com/media/USATODAY/USATODAY/2014/04/24//1398348071002-ronald042414-003.jpg?width=592&format=pjpg&auto=webp&quality=70" }
   ]
 };
 
