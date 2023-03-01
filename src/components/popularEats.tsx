@@ -1,38 +1,38 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import RestaurantPanel from './RestaurantPanel';
 import styles from '../styles/popularEats.module.css';
 
-const restaurants = [
-  {
-    name: "Restaurant 1",
-    description: "Description 1",
-    image: "https://via.placeholder.com/300x200.png?text=Restaurant+1",
-  },
-  {
-    name: "Restaurant 2",
-    description: "Description 2",
-    image: "https://via.placeholder.com/300x200.png?text=Restaurant+2",
-  },
-  {
-    name: "Restaurant 3",
-    description: "Description 3",
-    image: "https://via.placeholder.com/300x200.png?text=Restaurant+3",
-  },
-  {
-    name: "Restaurant 4",
-    description: "Description 4",
-    image: "https://via.placeholder.com/300x200.png?text=Restaurant+4",
-  },
-];
+interface Restaurant {
+  id: string;
+  name: string;
+  description: string;
+  image: string;
+}
 
 const PopularEats: React.FC = () => {
+  const [restaurants, setRestaurants] = useState<Restaurant[]>([]);
+
+  useEffect(() => {
+    const fetchRestaurants = async() => {
+      try {
+        const res = await fetch('/api/restaurant');
+        const data = await res.json();
+        setRestaurants(data);
+        console.log(data)
+      } catch (error) {
+        console.error(error);
+      }
+    }
+    fetchRestaurants()
+  }, []);
+
   return (
     <div className={styles.popularEats}>
       <div className={styles.title}>Popular Eats</div>
       <div className={styles.restaurantGrid}>
-        {restaurants.map((restaurant) => (
+        {restaurants.map((restaurant: Restaurant) => (
           <RestaurantPanel
-            key={restaurant.name}
+            key={restaurant.id}
             name={restaurant.name}
             description={restaurant.description}
             image={restaurant.image}
