@@ -20,7 +20,6 @@ const Restaurants: React.FC = () => {
          </div>
          <div className={styles.bottomSide}>
             <PopularEats />
-            /FavoritesComponent
          </div>
 
       </div>

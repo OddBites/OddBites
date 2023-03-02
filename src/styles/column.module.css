@@ -27,11 +27,6 @@
   margin-bottom: 16px;
 }
 
-.images {
-  display: grid;
-  grid-template-columns: repeat(1, 3fr);
-  grid-gap: 16px;
-}
 
 .images img {
   width: 100%;

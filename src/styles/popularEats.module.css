@@ -1,8 +1,9 @@
 .popularEats {
   display: flex;
   flex-direction: column;
-  width: 30%;
+  width: 40%;
   margin-left: 32px;
+  height: 40%;
   padding: 16px;
   border: 1px solid #ddd;
   border-radius: 8px;
