@@ -2,7 +2,7 @@ import React from 'react';
 import Header from '../components/header';
 import Column from '../components/column';
 import PopularRestaurants from '../components/PopularRestaurants';
-import GoogleMap from '../components/GMap';
+import GMap from '../components/GMap';
 import styles from '../styles/restaurants.module.css';
 import BottomSide from '@/components/BottomSide';
 
