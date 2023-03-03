@@ -8,6 +8,12 @@ import { useRouter } from 'next/router';
 
 const inter = Inter({ subsets: ['latin'] })
 
+function myFunction() {
+  var element = document.body;
+  element.classList.toggle("dark");
+}
+
+
 export default function Home() {
   return (
     <>
@@ -19,6 +25,7 @@ export default function Home() {
       </Head>
       <main className={styles.main}>
       <div className={styles.description}>
+      <button onClick={myFunction}>Switch Modes</button>
           <p>
             Hello Everyone!
           </p>
