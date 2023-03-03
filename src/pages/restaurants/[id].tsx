@@ -13,8 +13,8 @@ const restaurant = {
   address: "45 Jay Scutti Blvd, Rochester, NY 14623",
   description: "McDonald's is a fast food restaurant chain that was founded in 1940 in San Bernardino, California. It has since grown to become one of the largest and most recognizable brands in the world, with over 39,000 locations in more than 100 countries.",
   menu: [
-    { id: 0, name: "McRib", kcal: 500, description: "A barbecue-flavored pork sandwich periodically sold by the international fast food restaurant chain McDonald's. It was first introduced to the McDonald's menu in 1981, following test marketing the year before." },
-    { id: 1, name: "Shamrock Shake", kcal: 460, description: "A seasonal green mint flavored milkshake dessert sold at some McDonald's restaurants during March to celebrate St. Patrick's Day in the US, Canada and Ireland." }
+    { id: 0, name: "McRib", kcal: 500, description: "A barbecue-flavored pork sandwich periodically sold by the international fast food restaurant chain McDonald's. It was first introduced to the McDonald's menu in 1981, following test marketing the year before.", image: "https://i0.wp.com/boingboing.net/wp-content/uploads/2020/11/1280px-McD-McRib.jpg?fit=1200%2C663&ssl=1" },
+    { id: 1, name: "Shamrock Shake", kcal: 460, description: "A seasonal green mint flavored milkshake dessert sold at some McDonald's restaurants during March to celebrate St. Patrick's Day in the US, Canada and Ireland.", image: "https://nypost.com/wp-content/uploads/sites/2/2016/03/mcdonalds-1.jpg?resize=1536,1024&quality=75&strip=all" }
   ],
   reviews: [
     { id: 0, author: "Patty Schwab", rating: 4.5, content: "Man I love McDonal!" },

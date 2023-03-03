@@ -5,6 +5,21 @@
     padding: 0.5em;
     text-align: left;
     background-color: whitesmoke;
+    display: grid;
+    grid-template-columns: 7em 1fr;
+    grid-template-rows: auto;
+}
+
+.body {
+    display: flex;
+    flex-direction: column;
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.itemContainer > img {
+    width: 7em;
+    grid-column: 1;
 }
 
 .name {
@@ -18,4 +33,5 @@
 
 .description {
     text-align: justify;
+    grid-column: 2;
 }
