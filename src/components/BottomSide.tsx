@@ -1,7 +1,7 @@
 import React from 'react';
 import PopularRestaurants from './PopularRestaurants';
 import RarestEats from './RarestEats';
-// import FavoritesScroll from './FavoritesScroll';
+import Favorites from './Favorites';
 import styles from '../styles/bottomSide.module.css';
 
 const BottomSide: React.FC = () => {
@@ -15,9 +15,10 @@ const BottomSide: React.FC = () => {
                 <div className={styles.title}> Rarest Eats</div>
                 <RarestEats />
             </div>
-            {/* <div className={styles.favoritesScroll}>
-        <FavoritesScroll />
-      </div> */}
+            <div className={styles.favoritesScroll}>
+            <div className={styles.title}>Favorites</div>
+        <Favorites />
+            </div>
         </div>
     );
 };
