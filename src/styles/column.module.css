@@ -4,27 +4,34 @@
   padding: 0.5em;
 }
 
-.reviews {
-  margin-top: 24px;
-}
-
-.reviews ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+.header {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
 }
 
-.reviews li {
-  margin-right: 8px;
+.title {
+  font-size: 32px;
+  font-weight: bold;
 }
+
+.subtitle {
+  font-size: 24px;
+  font-weight: bold;
+  color: gray;
+}
+
+.divider {
+  height: 1px;
+  width: 100%;
+  background: linear-gradient(to right, #ddd, #bbb, #ddd);
+  margin: 16px 0;
+}
+
 
 .gallery {
   margin-top: 24px;
-}
-
-.gallery h2 {
-  margin-bottom: 16px;
 }
 
 

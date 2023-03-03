@@ -41,27 +41,32 @@ const Column: React.FC = () => {
       src: 'https://via.placeholder.com/100',
       name: 'Restaurant 7',
       description: 'Description of Restaurant 7',
+    },
+    {
+      src: 'https://via.placeholder.com/100',
+      name: 'Restaurant 8',
+      description: 'Description of Restaurant 8',
+    },
+    {
+      src: 'https://via.placeholder.com/100',
+      name: 'Restaurant 9',
+      description: 'Description of Restaurant 9',
+    },
+    {
+      src: 'https://via.placeholder.com/100',
+      name: 'Restaurant 10',
+      description: 'Description of Restaurant 10',
     }
   ];
 
   return (
     <div className={styles.column}>
-      <h1>Odd Bites Near You</h1>
-      <h2>Restaurants</h2>
+        <h1 className={styles.title}>Oddest Bites In Your Area</h1>
+        <h2 className={styles.subtitle}>Restaurants</h2>
+        <div className={styles.divider}></div>
       <div className={styles.gallery}>
         <RestaurantContainer items={RestaurantItems} />
       </div>
-      {/* <div className={styles.reviews}>
-        <h2>Reviews</h2>
-        <ul>
-          <li><FontAwesomeIcon icon={faStar} style={{ color: 'gold' }} /></li>
-          <li><FontAwesomeIcon icon={faStar} style={{ color: 'gold' }} /></li>
-          <li><FontAwesomeIcon icon={faStar} style={{ color: 'gold' }} /></li>
-          <li><FontAwesomeIcon icon={faStar} style={{ color: 'gold' }} /></li>
-          <li><FontAwesomeIcon icon={faStarRegular} /></li>
-        </ul>
-      </div> */}
-
     </div>
   );
 };
