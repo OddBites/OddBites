@@ -1,31 +1,38 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import styles from '../styles/column.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar, faStarHalf } from '@fortawesome/free-solid-svg-icons';
 import { faStar as faStarRegular } from '@fortawesome/free-regular-svg-icons';
 import MenuContainer from './MenuContainer';
 
-interface MenuItem {
-  id: string;
-  name: string;
-  src: string;
-  description: string;
-}
 const Column: React.FC = () => {
-  const [menuItems, setMenuItems] = useState<MenuItem[]>([]);
-
-useEffect(() => {
-  const fetchMenuItems = async () => {
-    try {
-      const res = await fetch('/api/menuItem');
-      const data = await res.json();
-      setMenuItems(data);
-    } catch (error) {
-      console.error(error);
+  const menuItems = [
+    {
+      src: 'https://via.placeholder.com/100',
+      name: 'Meal 1',
+      description: 'Description of Meal 1',
+    },
+    {
+      src: 'https://via.placeholder.com/100',
+      name: 'Meal 2',
+      description: 'Description of Meal 2',
+    },
+    {
+      src: 'https://via.placeholder.com/100',
+      name: 'Meal 3',
+      description: 'Description of Meal 3',
+    },
+    {
+      src: 'https://via.placeholder.com/100',
+      name: 'Meal 4',
+      description: 'Description of Meal 4',
+    },
+    {
+      src: 'https://via.placeholder.com/100',
+      name: 'Meal 5',
+      description: 'Description of Meal 5',
     }
-  };
-  fetchMenuItems();
-}, []);
+  ];
 
   return (
     <div className={styles.column}>
