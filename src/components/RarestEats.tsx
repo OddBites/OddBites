@@ -14,7 +14,7 @@ const food = [
     image: "https://via.placeholder.com/300x200.png?text=Food+2",
   },
   {
-    name: "Restaurant 3",
+    name: "Food 3",
     description: "Description 3",
     image: "https://via.placeholder.com/300x200.png?text=Food+3",
   },

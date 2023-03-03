@@ -1,6 +1,11 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  reactStrictMode: true,
-}
 
-module.exports = nextConfig
+const Dotenv = require('dotenv-webpack');
+
+module.exports = {
+  webpack: (config) => {
+    // Initialize dotenv
+    config.plugins.push(new Dotenv({ silent: true }));
+
+    return config;
+  },
+};
