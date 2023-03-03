@@ -1,6 +1,6 @@
 import React from 'react';
 import RestaurantPanel from './RestaurantPanel';
-import styles from '../styles/popularEats.module.css';
+import styles from '../styles/PopularRestaurants.module.css';
 
 const restaurants = [
   {
@@ -23,12 +23,36 @@ const restaurants = [
     description: "Description 4",
     image: "https://via.placeholder.com/300x200.png?text=Restaurant+4",
   },
+  {
+    name: "Restaurant 4",
+    description: "Description 4",
+    image: "https://via.placeholder.com/300x200.png?text=Restaurant+4",
+  },
+  {
+    name: "Restaurant 4",
+    description: "Description 4",
+    image: "https://via.placeholder.com/300x200.png?text=Restaurant+4",
+  },
+  {
+    name: "Restaurant 4",
+    description: "Description 4",
+    image: "https://via.placeholder.com/300x200.png?text=Restaurant+4",
+  },
+  {
+    name: "Restaurant 4",
+    description: "Description 4",
+    image: "https://via.placeholder.com/300x200.png?text=Restaurant+4",
+  },
+  {
+    name: "Restaurant 4",
+    description: "Description 4",
+    image: "https://via.placeholder.com/300x200.png?text=Restaurant+4",
+  },
 ];
 
-const PopularEats: React.FC = () => {
+const PopularRestaurants: React.FC = () => {
   return (
-    <div className={styles.popularEats}>
-      <div className={styles.title}>Popular Eats</div>
+    <div className={styles.container}>
       <div className={styles.restaurantGrid}>
         {restaurants.map((restaurant) => (
           <RestaurantPanel
@@ -43,4 +67,4 @@ const PopularEats: React.FC = () => {
   );
 };
 
-export default PopularEats;
+export default PopularRestaurants;

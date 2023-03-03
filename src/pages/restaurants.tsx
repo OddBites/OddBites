@@ -1,9 +1,9 @@
 import React from 'react';
 import Header from '../components/header';
 import Column from '../components/column';
-import PopularEats from '../components/popularEats';
 import GoogleMap from '../components/GoogleMap';
 import styles from '../styles/restaurants.module.css';
+import BottomSide from '@/components/BottomSide';
 
 const Restaurants: React.FC = () => {
   return (
@@ -19,9 +19,8 @@ const Restaurants: React.FC = () => {
             <GoogleMap />
          </div>
          <div className={styles.bottomSide}>
-            <PopularEats />
+            <BottomSide />
          </div>
-
       </div>
     </div>
   );
