@@ -2,7 +2,7 @@ import React from 'react';
 import Header from '../components/header';
 import Column from '../components/column';
 import PopularEats from '../components/popularEats';
-import GoogleMap from '../components/GoogleMap';
+import GMap from '../components/GMap';
 import styles from '../styles/restaurants.module.css';
 
 const Restaurants: React.FC = () => {
@@ -16,7 +16,7 @@ const Restaurants: React.FC = () => {
             <Column />
          </div>
          <div className={styles.topSide}>
-            <GoogleMap />
+            <GMap />
          </div>
          <div className={styles.bottomSide}>
             <PopularEats />
