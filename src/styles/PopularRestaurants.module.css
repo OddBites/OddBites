@@ -3,6 +3,7 @@
   flex-direction: column;
   width: 40vh;
   height: 100vh;
+  grid-auto-rows: calc((100vh - 32px - 32px - (n - 1) * 16px) / n); /* n is the number of rows */
   margin-left: 32px;
   padding: 16px;
   border: 1px solid #ddd;
@@ -22,7 +23,7 @@
   .container {
     flex-direction: row;
     width: 100%;
-    height: auto;
+    grid-auto-rows: 10px;
     margin-left: 0;
     padding: 0;
     border: none;

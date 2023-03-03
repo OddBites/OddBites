@@ -27,7 +27,7 @@
     .container {
       flex-direction: row;
       width: 100%;
-      height: auto;
+      height: 60vh;
       margin-left: 0;
       padding: 0;
       border: none;
