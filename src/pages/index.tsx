@@ -25,7 +25,7 @@ export default function Home() {
       </Head>
       <main className={styles.main}>
       <div className={styles.description}>
-      <button onClick={myFunction}>"Switch Modes"</button>
+      <button onClick={myFunction}>Switch Modes</button>
           <p>
             Hello Everyone!
           </p>

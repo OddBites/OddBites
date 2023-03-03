@@ -7,7 +7,7 @@ import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext, ImageWithZoom 
 import 'pure-react-carousel/dist/react-carousel.es.css';
 
 // TODO: type 'r'
-const LeftSide = ({ r }) => {
+const LeftSide = ({ r }:any) => {
   return (
     <div className={styles.bar}>
       <h2 className={styles.name}>{r.name}</h2>

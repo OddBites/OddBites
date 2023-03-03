@@ -2,7 +2,7 @@ import React from 'react';
 
 import styles from '../../styles/menuItem.module.css';
 
-const MenuItem = ({ item }) => {
+const MenuItem = ({ item }:any) => {
   return (
     <div className={styles.itemContainer}>
       <img src={item.image} alt="Menu Item" />

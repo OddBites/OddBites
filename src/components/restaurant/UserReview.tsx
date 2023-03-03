@@ -2,7 +2,7 @@ import React from 'react';
 
 import styles from '../../styles/userReview.module.css';
 
-const UserReview = ({ review }) => {
+const UserReview = ({ review }:any) => {
   return (
     <div className={styles.itemContainer}>
       <div className={styles.avatarArea}>
