@@ -1,6 +1,6 @@
 import React from 'react';
 import FoodPanel from './FoodPanel';
-import styles from '../styles/RarestEats.module.css';
+import styles from '../../styles/RarestEats.module.css';
 
 const food = [
   {

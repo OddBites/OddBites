@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../styles/column.module.css';
+import styles from '../../styles/column.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar, faStarHalf } from '@fortawesome/free-solid-svg-icons';
 import { faStar as faStarRegular } from '@fortawesome/free-regular-svg-icons';

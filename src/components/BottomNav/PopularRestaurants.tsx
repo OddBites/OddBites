@@ -1,6 +1,6 @@
 import React from 'react';
 import RestaurantPanel from './RestaurantPanel';
-import styles from '../styles/PopularRestaurants.module.css';
+import styles from '../../styles/PopularRestaurants.module.css';
 
 const restaurants = [
   {

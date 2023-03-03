@@ -2,7 +2,7 @@ import React from 'react';
 import PopularRestaurants from './PopularRestaurants';
 import RarestEats from './RarestEats';
 import Favorites from './Favorites';
-import styles from '../styles/bottomSide.module.css';
+import styles from '../../styles/bottomSide.module.css';
 
 const BottomSide: React.FC = () => {
     return (

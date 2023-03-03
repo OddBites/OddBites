@@ -1,10 +1,10 @@
 import React from 'react';
 import Header from '../components/header';
-import Column from '../components/column';
-import PopularRestaurants from '../components/PopularRestaurants';
-import GMap from '../components/GMap';
+import Column from '../components/SideNav/column';
+import PopularRestaurants from '../components/BottomNav/PopularRestaurants';
+import GMap from '../components/TopNav/GMap';
 import styles from '../styles/restaurants.module.css';
-import BottomSide from '@/components/BottomSide';
+import BottomSide from '@/components/BottomNav/BottomSide';
 
 const Restaurants: React.FC = () => {
   return (

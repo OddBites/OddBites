@@ -1,7 +1,7 @@
 import React from 'react';
-import styles from '../styles/GMap.module.css';
+import styles from '../../styles/GMap.module.css';
 import { GoogleMap, LoadScript } from '@react-google-maps/api';
-import {mapStyles} from '../VanillaJS/mapStyles';
+import {mapStyles} from '../../VanillaJS/mapStyles';
 
 const api_key = process.env.GOOGLE_API_KEY!
 

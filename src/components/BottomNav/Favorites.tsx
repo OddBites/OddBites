@@ -1,6 +1,6 @@
 import React from 'react';
 import FavoritesItem from './FavoritesItem';
-import styles from '../styles/Favorites.module.css';
+import styles from '../../styles/Favorites.module.css';
 
 const food = [
     {

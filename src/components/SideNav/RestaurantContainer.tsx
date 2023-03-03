@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../styles/RestaurantContainer.module.css';
+import styles from '../../styles/RestaurantContainer.module.css';
 import RestaurantItem from './RestaurantItem';
 
 interface RestaurantContainerProps {

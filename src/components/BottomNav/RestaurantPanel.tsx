@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import styles from '../styles/restaurantPanel.module.css';
+import styles from '../../styles/restaurantPanel.module.css';
 
 interface Props {
   name: string;
