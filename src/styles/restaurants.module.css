@@ -6,6 +6,7 @@
     width: 100vw;
     height: 100vh; /* set height to viewport height */
     overflow: hidden; /* hide scrollbars */
+    
   }
 
 .header {
