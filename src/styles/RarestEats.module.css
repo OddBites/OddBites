@@ -33,7 +33,7 @@
       border: none;
       border-radius: 0;
       box-shadow: none;
-      overflow-y: visible; 
+      overflow-y: auto;  
     }
   
     .restaurantGrid {

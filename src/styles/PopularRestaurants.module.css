@@ -11,11 +11,6 @@
   overflow-y: auto; 
 }
 
-.title {
-  font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 16px;
-}
 
 .restaurantGrid {
   display: grid;
@@ -33,7 +28,7 @@
     border: none;
     border-radius: 0;
     box-shadow: none;
-    overflow-y: visible; 
+    overflow-y: auto; 
   }
 
 
