@@ -1,15 +1,15 @@
 import React from 'react';
-import styles from '../styles/MenuItem.module.css';
+import styles from '../styles/RestaurantItem.module.css';
 
-interface MenuItemProps {
+interface RestaurantItemProps {
   src: string;
   name: string;
   description: string;
 }
 
-const MenuItem: React.FC<MenuItemProps> = ({ src, name, description }) => {
+const RestaurantItem: React.FC<RestaurantItemProps> = ({ src, name, description }) => {
   return (
-    <div className={styles.menuItem}>
+    <div className={styles.RestaurantItem}>
       <img src={src} alt={name} className={styles.image} />
       <div className={styles.details}>
         <h3 className={styles.name}>{name}</h3>
@@ -19,4 +19,4 @@ const MenuItem: React.FC<MenuItemProps> = ({ src, name, description }) => {
   );
 };
 
-export default MenuItem;
+export default RestaurantItem;

@@ -1,8 +1,8 @@
 import React from 'react';
-import styles from '../styles/MenuContainer.module.css';
-import MenuItem from './MenuItem';
+import styles from '../styles/RestaurantContainer.module.css';
+import RestaurantItem from './RestaurantItem';
 
-interface MenuContainerProps {
+interface RestaurantContainerProps {
   items: {
     src: string;
     name: string;
@@ -10,11 +10,11 @@ interface MenuContainerProps {
   }[];
 }
 
-const MenuContainer: React.FC<MenuContainerProps> = ({ items }) => {
+const RestaurantContainer: React.FC<RestaurantContainerProps> = ({ items }) => {
   return (
     <div className={styles.container}>
       {items.map((item, index) => (
-        <MenuItem
+        <RestaurantItem
           key={index}
           src={item.src}
           name={item.name}
@@ -25,4 +25,4 @@ const MenuContainer: React.FC<MenuContainerProps> = ({ items }) => {
   );
 };
 
-export default MenuContainer;
+export default RestaurantContainer;

@@ -1,14 +1,16 @@
-.menuItem {
+.RestaurantItem {
     display: flex;
     align-items: center;
+    width: 35rem;
+    height: 5rem;
     padding: 1rem;
     border: 1px solid #ccc;
     border-radius: 0.5rem;
   }
   
   .image {
-    width: 8rem;
-    height: 8rem;
+    width: 6rem;
+    height: 6rem;
     object-fit: cover;
     margin-right: 1rem;
   }
