@@ -2,7 +2,7 @@ import { NextApiRequest, NextApiResponse } from 'next';
 import { db } from '../../../firebase';
 import { collectionGroup, getDocs } from 'firebase/firestore';
 
-interface MenuItem {
+export interface MenuItem {
   id: string;
   name: string;
   src: string;
