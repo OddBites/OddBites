@@ -31,6 +31,8 @@ export default function Home() {
           </p>
           </div>
     </main>
+    <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBfJgOybNOb9-nAD3Rxb2avRCktO6nymPU&callback=initMap"></script>
+
     </>
   )
 }

@@ -1,6 +1,6 @@
 import next from 'next';
-import React from 'react';
-import styles from '../styles/restaurantPanel.module.css';
+import React, { useEffect, useState }from 'react';
+import styles from 'src/styles/restaurantPanel.module.css';
 import Link from "next/link"
 
 interface Props {

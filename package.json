@@ -9,17 +9,21 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.3.0",
     "@fortawesome/free-regular-svg-icons": "^6.3.0",
     "@fortawesome/free-solid-svg-icons": "^6.3.0",
     "@fortawesome/react-fontawesome": "^0.2.0",
     "@next/font": "13.1.6",
+    "@react-google-maps/api": "^2.18.1",
     "@types/node": "18.13.0",
     "@types/react": "18.0.28",
     "@types/react-dom": "18.0.10",
+    "dotenv-webpack": "^8.0.1",
     "eslint": "8.34.0",
     "eslint-config-next": "13.1.6",
     "firebase": "^9.17.1",
     "firebase-tools": "^11.23.1",
+    "google-map-react": "^2.2.0",
     "next": "^13.1.6",
     "react": "18.2.0",
     "react-dom": "18.2.0",
@@ -27,6 +31,7 @@
     "vercel": "^28.15.6"
   },
   "devDependencies": {
+    "@types/google-map-react": "^2.1.7",
     "pure-react-carousel": "^1.30.1"
   }
 }
