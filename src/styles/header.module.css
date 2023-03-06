@@ -54,3 +54,6 @@
     align-items: center;
     color:  var(--color-white);
   }
+  .settings > * {
+      padding-left: 1em;
+  }

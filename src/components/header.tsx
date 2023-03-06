@@ -2,6 +2,7 @@ import React from 'react';
 import styles from '../styles/header.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch, faCog } from '@fortawesome/free-solid-svg-icons';
+import User from './User';
 
 
 const Header: React.FC = () => {
@@ -17,7 +18,7 @@ const Header: React.FC = () => {
         </div>
       </div>
       <div className={styles.settings}>
-        
+        <User />
         <FontAwesomeIcon icon={faCog} size="lg" />
       </div>
     </header>
