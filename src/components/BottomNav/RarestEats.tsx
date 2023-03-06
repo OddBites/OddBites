@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import RestaurantPanel from './RestaurantPanel';
 import styles from '../../styles/RarestEats.module.css';
-import { MenuItem } from '@/pages/api/menuItem';
+import { MenuItem } from '@/pages/api/menuItems';
 
 
   const RarestEats: React.FC = () => {
