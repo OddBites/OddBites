@@ -1,5 +1,5 @@
 import React from 'react';
-import RestaurantPanel from './RestaurantPanel';
+import RestaurantPanel from 'src/components/BottomNav/RestaurantPanel';
 import styles from '../styles/popularEats.module.css';
 
 const restaurants = [
@@ -47,5 +47,3 @@ const PopularEats: React.FC = () => {
     </div>
   );
 };
-
-export default PopularEats;
