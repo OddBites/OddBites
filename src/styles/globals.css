@@ -16,3 +16,8 @@
     background: transparent;
     font-family: 'Roboto Flex', sans-serif;
   }
+  
+  .dark{
+    background-color: #222;
+    color: #e6e6e6;
+}

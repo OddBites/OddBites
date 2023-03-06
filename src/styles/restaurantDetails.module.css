@@ -1,0 +1,23 @@
+
+.split {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    height: 100%;
+    gap: 1em;
+}
+
+.left {
+    grid-column: 1;
+    grid-row: 1;
+    border-right: 1px solid lightgray;
+    display: flex;
+    flex-direction: column;
+}
+
+.right {
+    grid-column: 2;
+    grid-row: 1;
+    display: flex;
+    flex-direction: column;
+}

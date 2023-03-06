@@ -31,6 +31,7 @@
     "vercel": "^28.15.6"
   },
   "devDependencies": {
-    "@types/google-map-react": "^2.1.7"
+    "@types/google-map-react": "^2.1.7",
+    "pure-react-carousel": "^1.30.1"
   }
 }

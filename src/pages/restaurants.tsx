@@ -6,6 +6,11 @@ import GMap from '../components/TopNav/GMap';
 import styles from '../styles/restaurants.module.css';
 import BottomSide from '@/components/BottomNav/BottomSide';
 
+function myFunction() {
+  var element = document.body;
+  element.classList.toggle("dark");
+}
+
 const Restaurants: React.FC = () => {
   return (
     <div>
