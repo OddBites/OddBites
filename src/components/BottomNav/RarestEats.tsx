@@ -30,6 +30,7 @@ import { MenuItem } from '@/pages/api/menuItems';
             name={food.name}
             description={food.description}
             image={food.src}
+            id ={food.id}
           />
         ))}
       </div>
