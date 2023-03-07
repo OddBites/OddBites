@@ -1,5 +1,5 @@
 import { initializeApp } from "firebase/app";
-import { signInWithEmailAndPassword, User as FBUser } from "firebase/auth";
+import { signInWithEmailAndPassword, signOut as FBSignOut, User as FBUser } from "firebase/auth";
 import * as firebase from "./../../firebase"
 
 export const signIn = async (email: string, password: string): Promise<User | null>  => {
@@ -24,6 +24,10 @@ export const currentUser = (): User | null => {
     return {
 	email: user.email
     };
+}
+
+export const signOut = () => {
+    FBSignOut(firebase.auth);
 }
 
 export type User = {
