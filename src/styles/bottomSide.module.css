@@ -10,18 +10,18 @@
 .popularRestaurants, .rarestEats, .favoritesScroll {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.08);
   padding: 1em;
-  border-radius: 18px;
+  border-radius: 18px 18px 0 0; /* top left and top right corners are rounded, bottom left and bottom right are not */
   height: calc(50vh - 3em - 60px); /* set the height of the container to 50vh minus the padding (2em) */
   max-height: calc(50vh - 3em - 60px); /* set the maximum height of the container to 50vh minus the padding (2em) */
 }
 
 .popularRestaurants {
-  background-color: #00eb14;
+  background-color: #ffffff;
   flex: 1 1 0; /* flex-grow, flex-shrink, flex-basis */
 }
 
 .rarestEats {
-  background-color: #ff0000;
+  background-color: #ffffff;
   flex: 1 1 0; /* flex-grow, flex-shrink, flex-basis */
 }
 

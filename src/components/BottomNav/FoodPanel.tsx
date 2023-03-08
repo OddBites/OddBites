@@ -5,11 +5,11 @@ interface Props {
   name: string;
   description: string;
   image: string;
-  nutrition: string;
+  // nutrition: string;
   id: string;
 }
 
-const FoodPanel: React.FC<Props> = ({ name, description, image, nutrition, id }) => {
+const FoodPanel: React.FC<Props> = ({ name, description, image, id }) => {
   return (
     <div className={styles.FoodPanel}>
       <div className={styles.imageWrapper}>
@@ -19,7 +19,7 @@ const FoodPanel: React.FC<Props> = ({ name, description, image, nutrition, id })
         <p>{name}</p>
       </div>
       <div className={styles.kcal}>
-      <p>Calories: {nutrition}</p>
+      {/* <p>Calories: {nutrition}</p> */}
       </div>
       <div className={styles.description}>
         <p>{description}</p>
