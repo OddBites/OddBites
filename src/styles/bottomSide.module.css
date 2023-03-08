@@ -1,18 +1,17 @@
 .container {
   display: flex;
-  flex-direction: row;
-  width: 100%; 
+  flex-direction: row; 
   gap: 2em;
   padding: 1em;
   justify-content: center; /* center items horizontally */
 }
 
 .popularRestaurants, .rarestEats, .favoritesScroll {
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.08);
   padding: 1em;
   border-radius: 18px 18px 0 0; /* top left and top right corners are rounded, bottom left and bottom right are not */
-  height: calc(50vh - 3em - 60px); /* set the height of the container to 50vh minus the padding (2em) */
-  max-height: calc(50vh - 3em - 60px); /* set the maximum height of the container to 50vh minus the padding (2em) */
+  height: calc(50vh - 3em - 60px); 
+  max-height: calc(50vh - 3em - 60px); 
 }
 
 .popularRestaurants {
@@ -26,8 +25,8 @@
 }
 
 .favoritesScroll {
-  background-color: #4400ff;
-  flex: 1 1 0; /* flex-grow, flex-shrink, flex-basis */
+  background-color: #ffffff;
+  flex: 0.7 1 0; /* flex-grow, flex-shrink, flex-basis */
 }
 
 .title {

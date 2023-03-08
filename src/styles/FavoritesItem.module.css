@@ -1,7 +1,7 @@
-/* .RestaurantItem {
+.FavoritesItem{
     display: flex;
     align-items: center;
-    width: 35rem;
+    width: 100%;
     height: 5rem;
     padding: 1rem;
     border: 1px solid #ccc;
@@ -27,4 +27,4 @@
   .description {
     font-size: 1.2rem;
     color: #666;
-  } */
+  }
