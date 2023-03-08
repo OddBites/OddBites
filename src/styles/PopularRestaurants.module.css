@@ -6,3 +6,11 @@
   overflow-y: auto;
   overflow-x: hidden;  
 }
+.noRestaurants {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  font-size: 24px;
+  color: #999;
+}

@@ -63,7 +63,7 @@ import { Restaurant } from '@/types/Restaurant';
 
 const PopularRestaurants: React.FC = () => {
   const [restaurants, setRestaurants] = useState<Restaurant[]>([]);
-  useEffect(() =>{
+  useEffect(() => {
     async function fetchData() {
       try{
         const res = await fetch('/api/restaurants');
@@ -72,10 +72,15 @@ const PopularRestaurants: React.FC = () => {
       } catch(error){
         console.error(error);
       }
-
     }
     fetchData();
   }, []);
+
+  if(restaurants.length === 0) {
+    return (
+      <div className={styles.noRestaurants}>There are no restaurants available.</div>
+    );
+  }
 
   return (
     <div className={styles.restaurantGrid}>
