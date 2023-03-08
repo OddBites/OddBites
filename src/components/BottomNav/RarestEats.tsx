@@ -37,7 +37,7 @@ const RarestEats: React.FC = () => {
   useEffect(() => {
     async function fetchData() {
       try {
-        const res = await fetch('/api/menu');
+        const res = await fetch('/api/menuItems');
         const data = await res.json();
         setfood(data);
       } catch (error) {
@@ -62,7 +62,7 @@ const RarestEats: React.FC = () => {
           name={food.name}
           description={food.description}
           image={food.src}
-          // nutrition = {food.nutrition}
+          nutrition = {food.nutrition}
           id={food.id}
         />
       ))}
