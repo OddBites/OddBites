@@ -1,41 +1,7 @@
-.container {
-  display: flex;
-  flex-direction: column;
-  width: 40vh;
-  height: 100vh;
-  grid-auto-rows: calc((100vh - 32px - 32px - (n - 1) * 16px) / n); /* n is the number of rows */
-  margin-left: 32px;
-  padding: 16px;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.08);
-  overflow-y: auto; 
-  
-}
-
-
 .restaurantGrid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(15vh, 1fr));
   grid-gap: 16px;
-}
-
-@media (min-width: 768px) {
-  .container {
-    flex-direction: row;
-    width: 100%;
-    grid-auto-rows: 10px;
-    margin-left: 0;
-    padding: 0;
-    border: none;
-    border-radius: 0;
-    box-shadow: none;
-    overflow-y: auto; 
-  }
-
-
-  .restaurantGrid {
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 32px;
-  }
+  max-height: 95%; 
+  overflow-y: auto; 
 }

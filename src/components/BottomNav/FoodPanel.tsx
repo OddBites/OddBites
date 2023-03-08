@@ -8,13 +8,19 @@ interface Props {
   nutrition: string;
 }
 
-const FoodPanel: React.FC<Props> = ({ name, description, image, nutrition}) => {
+const FoodPanel: React.FC<Props> = ({ name, description, image, nutrition }) => {
   return (
     <div className={styles.FoodPanel}>
-      <img src={image} alt={name} className={styles.image} />
-      <div className={styles.description}>
+      <div className={styles.imageWrapper}>
+        <img src={image} alt={name} className={styles.image} />
+      </div>
+      <div className={styles.nameTag}>
         <p>{name}</p>
-        <p>Calories: {nutrition}</p>
+      </div>
+      <div className={styles.kcal}>
+      <p>Calories: {nutrition}</p>
+      </div>
+      <div className={styles.description}>
         <p>{description}</p>
       </div>
     </div>

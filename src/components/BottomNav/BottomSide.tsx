@@ -16,8 +16,8 @@ const BottomSide: React.FC = () => {
                 <RarestEats />
             </div>
             <div className={styles.favoritesScroll}>
-            <div className={styles.title}>Favorites</div>
-        <Favorites />
+                <div className={styles.title}>Favorites</div>
+                <Favorites />
             </div>
         </div>
     );

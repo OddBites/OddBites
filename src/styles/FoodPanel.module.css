@@ -1,29 +1,33 @@
 .restaurantPanel {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 100%; /* set height to fill available space */
-    max-height: 100%; /* ensure container does not overflow */
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    cursor: pointer;
-  }
-  
-  .image {
-    width: 100%;
-    height: 100%; /* set height to fill available space */
-    max-height: 10rem; /* ensure image does not overflow */
-    max-width: 30rem; /* ensure image does not overflow */
-    border-radius: 8px 8px 0 0;
-    object-fit: cover;
-  }
-  
-  .description {
-    padding: 8px;
-    font-size: 14px;
-    text-align: center;
-    flex-grow: 1; /* make description take up remaining space */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%; /* set height to fill available space */
+  max-height: 100%; /* ensure container does not overflow */
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.imageWrapper {
+  height: 60%; /* set height to 55% to leave room for nameTag and description */
+  overflow: hidden; /* hide any content that overflows */
+  border-radius: 8px 8px 0 0;
+}
+
+.image {
+  width: 100%;
+  height: 100%; /* set height to 100% to fill the image wrapper */
+  object-fit: cover;
+}
+
+.kcal .nameTag, .description {
+  height: 10%; /* set height to 20% for each */
+  padding: 8px;
+  font-size: 14px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box; /* include padding and border in element's height and width */
+  overflow-y: auto;
+}
