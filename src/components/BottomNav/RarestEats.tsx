@@ -33,7 +33,7 @@ import FoodPanel from './FoodPanel';
 
 
 const RarestEats: React.FC = () => {
-  const [food, setfood] = useState<MenuItem[]>([]);
+  const [foods, setfood] = useState<MenuItem[]>([]);
   useEffect(() => {
     async function fetchData() {
       try {
@@ -48,7 +48,7 @@ const RarestEats: React.FC = () => {
     fetchData();
   }, []);
 
-  if(food.length === 0) {
+  if(foods.length === 0) {
     return (
       <div className={styles.noFood}>There are no food items available.</div>
     );
@@ -56,7 +56,7 @@ const RarestEats: React.FC = () => {
 
   return (
     <div className={styles.foodGrid}>
-      {food.map((food) => (
+      {foods.map((food) => (
         <FoodPanel
           key={food.name}
           name={food.name}
