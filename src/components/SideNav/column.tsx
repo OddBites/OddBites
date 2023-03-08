@@ -67,6 +67,7 @@ const Column: React.FC = () => {
       <div className={styles.gallery}>
         <RestaurantContainer items={RestaurantItems} />
       </div>
+      <button className={styles.submitButton}>Submit a new food item</button>
     </div>
   );
 };

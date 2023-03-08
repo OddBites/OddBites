@@ -7,6 +7,7 @@ export interface MenuItem {
   name: string;
   src: string;
   description: string;
+  
 }
 
 export default async function handler(

@@ -14,9 +14,13 @@ const RestaurantPanel: React.FC<Props> = ({ name, description, image, id }) => {
   return (
     <div className={styles.restaurantPanel}>
       <Link href={`/restaurants/${id}`}>
+      <div className={styles.imageWrapper}>
           <img src={image} alt={name} className={styles.image} />
-          <div className={styles.description}>
+          </div>
+          <div className={styles.nameTag}>
             <p>{name}</p>
+          </div>
+          <div className={styles.description}>
             <p>{description}</p>
           </div>
       </Link>
