@@ -6,6 +6,7 @@ export interface MenuItem {
   id: string;
   name: string;
   src: string;
+  nutrition: string;
   description: string;
   
 }
@@ -19,18 +20,20 @@ export default async function handler(
 
   if (req.method === 'POST') {
     try {
-      const { name, src, description } = req.body;
+      const { name, src, nutrition, description } = req.body;
       const subcollectionRef = collection(db, `restaurants/${restaurantId}/menuItems`);
       console.log(subcollectionRef);
       const newMenuItemRef = await addDoc(subcollectionRef, {
         name,
         src,
+        nutrition,
         description
       });
       const newMenuItem: MenuItem = {
         id: newMenuItemRef.id,
         name,
         src,
+        nutrition,
         description
       };
       return res.status(201).json(newMenuItem);
@@ -51,6 +54,7 @@ export default async function handler(
           id: menuItemDoc.id,
           name: menuItemData.name,
           src: menuItemData.src,
+          nutrition: menuItemData.nutrition,
           description: menuItemData.description
         };
         return res.status(200).json(menuItem);
@@ -66,6 +70,7 @@ export default async function handler(
           id: doc.id,
           name: menuItemData.name,
           src: menuItemData.src,
+          nutrition: menuItemData.nutrition,
           description: menuItemData.description
         };
         menuItems.push(menuItem);
@@ -80,6 +85,7 @@ export default async function handler(
           id: doc.id,
           name: menuItemData.name,
           src: menuItemData.src,
+          nutrition: menuItemData.nutrition,
           description: menuItemData.description
         };
         menuItems.push(menuItem);
