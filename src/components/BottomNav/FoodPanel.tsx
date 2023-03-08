@@ -6,9 +6,10 @@ interface Props {
   description: string;
   image: string;
   nutrition: string;
+  id: string;
 }
 
-const FoodPanel: React.FC<Props> = ({ name, description, image, nutrition }) => {
+const FoodPanel: React.FC<Props> = ({ name, description, image, nutrition, id }) => {
   return (
     <div className={styles.FoodPanel}>
       <div className={styles.imageWrapper}>
