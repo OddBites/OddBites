@@ -6,10 +6,10 @@ const UserReview = ({ review }:any) => {
   return (
     <div className={styles.itemContainer}>
       <div className={styles.avatarArea}>
-        <img src="https://www.pngarts.com/files/10/Default-Profile-Picture-PNG-Download-Image.png" alt="Profile Image" />
+        <img src={review.src} alt="Profile Image" />
       </div>
       <div className={styles.reviewBody}>
-        <div className={styles.author}>{review.author}</div>
+        <div className={styles.author}>{review.name}</div>
         <div className={styles.rating}>{review.rating} stars</div>
         <div className={styles.content}>{review.content}</div>
       </div>

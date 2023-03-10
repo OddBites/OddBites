@@ -7,6 +7,7 @@ export interface MenuItem {
   name: string;
   src: string;
   description: string;
+  nutrition: string;
 }
 
 export default async function handler(
@@ -18,19 +19,21 @@ export default async function handler(
 
   if (req.method === 'POST') {
     try {
-      const { name, src, description } = req.body;
+      const { name, src, description, nutrition } = req.body;
       const subcollectionRef = collection(db, `restaurants/${restaurantId}/menuItems`);
       console.log(subcollectionRef);
       const newMenuItemRef = await addDoc(subcollectionRef, {
         name,
         src,
-        description
+        description,
+        nutrition
       });
       const newMenuItem: MenuItem = {
         id: newMenuItemRef.id,
         name,
         src,
-        description
+        description,
+        nutrition
       };
       return res.status(201).json(newMenuItem);
     } catch (error) {
@@ -50,7 +53,8 @@ export default async function handler(
           id: menuItemDoc.id,
           name: menuItemData.name,
           src: menuItemData.src,
-          description: menuItemData.description
+          description: menuItemData.description,
+          nutrition: menuItemData.nutrition
         };
         return res.status(200).json(menuItem);
       } else {
@@ -65,7 +69,8 @@ export default async function handler(
           id: doc.id,
           name: menuItemData.name,
           src: menuItemData.src,
-          description: menuItemData.description
+          description: menuItemData.description,
+          nutrition: menuItemData.nutrition
         };
         menuItems.push(menuItem);
       });
@@ -79,7 +84,8 @@ export default async function handler(
           id: doc.id,
           name: menuItemData.name,
           src: menuItemData.src,
-          description: menuItemData.description
+          description: menuItemData.description,
+          nutrition: menuItemData.nutrition
         };
         menuItems.push(menuItem);
       });
