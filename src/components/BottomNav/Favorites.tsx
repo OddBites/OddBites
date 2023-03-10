@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import FavoritesItem from './FavoritesItem';
 import styles from '../../styles/Favorites.module.css';
 
@@ -35,6 +35,7 @@ const food = [
     }
   ];
   
+
   const Favorites: React.FC = () => {
     return (
       <div className={styles.container}>
@@ -51,3 +52,4 @@ const food = [
   };
   
   export default Favorites;
+

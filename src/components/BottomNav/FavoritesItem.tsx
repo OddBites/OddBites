@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import styles from '../../styles/FavoritesItem.module.css';
 
 interface FavoritesItemProps {
@@ -7,9 +7,20 @@ interface FavoritesItemProps {
   description: string;
 }
 
+
+
 const FavoritesItem: React.FC<FavoritesItemProps> = ({ image, name, description }) => {
+  const [isFavorite, setIsFavorite] = useState(true);
+
+  const handleFavoriteClick = () => {
+    setIsFavorite(!isFavorite);
+  };
+
   return (
     <div className={styles.FavoritesItem}>
+      <div className={styles.favorite} onClick={handleFavoriteClick}>
+        {isFavorite ? <span>☆</span> : <span>★</span> }
+      </div>
       <img src={image} alt={name} className={styles.image} />
       <div className={styles.details}>
         <h3 className={styles.name}>{name}</h3>

@@ -28,3 +28,9 @@
     font-size: 1.2rem;
     color: #666;
   }
+
+  .favorite {
+    font-size: 40px;
+    color: #ffcc00;
+    cursor: pointer;
+  }
