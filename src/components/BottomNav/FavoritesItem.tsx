@@ -19,7 +19,7 @@ const FavoritesItem: React.FC<FavoritesItemProps> = ({ image, name, description 
   return (
     <div className={styles.FavoritesItem}>
       <div className={styles.favorite} onClick={handleFavoriteClick}>
-        {isFavorite ? <span>☆</span> : <span>★</span> }
+        {isFavorite ?  <span>★</span> : <span>☆</span> }
       </div>
       <img src={image} alt={name} className={styles.image} />
       <div className={styles.details}>
