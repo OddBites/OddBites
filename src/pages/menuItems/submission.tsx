@@ -1,4 +1,5 @@
 import { FormEventHandler, useState } from 'react';
+import styles from '../../styles/submission.module.css';
 
 const MenuSubmissionPage = () => {
   const [restaurantId, setRestaurantId] = useState('');
@@ -23,14 +24,17 @@ const MenuSubmissionPage = () => {
       })
     })
   };
-
+    
   return (
-    <div>
-      <h1>Submit a Menu Item</h1>
-      <form onSubmit={handleSubmit}>
-      <label>
+    <div className={styles.column}>
+      <div className={styles.header}>
+        <h1 className={styles.title}>Submit a Menu Item</h1>
+      </div>
+      <div className={styles.divider}></div>
+      <form className={styles.form} onSubmit={handleSubmit}>
+        <label>
           Restaurant Id:
-          <input type="text" value={restaurantId} onChange={(e) => setRestaurantId(e.target.value)} />
+          <input type="text" value={name} onChange={(e) => setRestaurantId(e.target.value)} />
         </label>
         <br />
         <label>
@@ -53,9 +57,10 @@ const MenuSubmissionPage = () => {
           <input type="string" value={image} onChange={(e) => setImage(e.target.value)} />        
         </label>
         <br />
-        <button type="submit">Submit</button>
+        <button type="submit" className={styles.submitButton}>Submit</button>
       </form>
-    </div>
+   </div>
+
   );
 };
 
