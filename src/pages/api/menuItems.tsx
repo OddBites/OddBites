@@ -8,7 +8,7 @@ export interface MenuItem {
   src: string;
   nutrition: string;
   description: string;
-  
+  isFavorite: boolean;
 }
 
 export default async function handler(
@@ -20,21 +20,23 @@ export default async function handler(
 
   if (req.method === 'POST') {
     try {
-      const { name, src, nutrition, description } = req.body;
+      const { name, src, nutrition, description, isFavorite } = req.body;
       const subcollectionRef = collection(db, `restaurants/${restaurantId}/menuItems`);
       console.log(subcollectionRef);
       const newMenuItemRef = await addDoc(subcollectionRef, {
         name,
         src,
         nutrition,
-        description
+        description,
+        isFavorite
       });
       const newMenuItem: MenuItem = {
         id: newMenuItemRef.id,
         name,
         src,
         nutrition,
-        description
+        description,
+        isFavorite
       };
       return res.status(201).json(newMenuItem);
     } catch (error) {
@@ -55,7 +57,9 @@ export default async function handler(
           name: menuItemData.name,
           src: menuItemData.src,
           nutrition: menuItemData.nutrition,
-          description: menuItemData.description
+          description: menuItemData.description,
+          isFavorite: menuItemData.isFavorite
+
         };
         return res.status(200).json(menuItem);
       } else {
@@ -71,7 +75,9 @@ export default async function handler(
           name: menuItemData.name,
           src: menuItemData.src,
           nutrition: menuItemData.nutrition,
-          description: menuItemData.description
+          description: menuItemData.description,
+          isFavorite: menuItemData.isFavorite
+
         };
         menuItems.push(menuItem);
       });
@@ -86,7 +92,8 @@ export default async function handler(
           name: menuItemData.name,
           src: menuItemData.src,
           nutrition: menuItemData.nutrition,
-          description: menuItemData.description
+          description: menuItemData.description,
+          isFavorite: menuItemData.isFavorite
         };
         menuItems.push(menuItem);
       });

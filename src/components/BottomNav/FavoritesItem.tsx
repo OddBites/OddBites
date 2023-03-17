@@ -5,15 +5,17 @@ interface FavoritesItemProps {
   image: string;
   name: string;
   description: string;
+  isFavorite: boolean;
+  onFavoriteClick: () => void;
 }
 
 
 
-const FavoritesItem: React.FC<FavoritesItemProps> = ({ image, name, description }) => {
-  const [isFavorite, setIsFavorite] = useState(true);
+const FavoritesItem: React.FC<FavoritesItemProps> = ({ image, name, description, isFavorite, onFavoriteClick }) => {
+  // const [isFavorite, setIsFavorite] = useState(true);
 
   const handleFavoriteClick = () => {
-    setIsFavorite(!isFavorite);
+    onFavoriteClick();
   };
 
   return (
