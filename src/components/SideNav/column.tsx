@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar, faStarHalf } from '@fortawesome/free-solid-svg-icons';
 import { faStar as faStarRegular } from '@fortawesome/free-regular-svg-icons';
 import RestaurantContainer from './RestaurantContainer';
+import { useRouter } from 'next/router';
 
 const Column: React.FC = () => {
   const RestaurantItems = [
@@ -59,6 +60,8 @@ const Column: React.FC = () => {
     }
   ];
 
+  const router = useRouter();
+
   return (
     <div className={styles.column}>
         <h1 className={styles.title}>Oddest Bites In Your Area</h1>
@@ -67,7 +70,7 @@ const Column: React.FC = () => {
       <div className={styles.gallery}>
         <RestaurantContainer items={RestaurantItems} />
       </div>
-      <button className={styles.submitButton}>Submit a new food item</button>
+      <button className={styles.submitButton} onClick={() => router.push('/menuItems/submission')}>Submit a new food item</button>
     </div>
   );
 };
