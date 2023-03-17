@@ -67,6 +67,12 @@ import { async } from '@firebase/util';
       });
       setfood(updatedFood);
     };
+
+    if(food.length === 0) {
+      return (
+        <div className={styles.noFood}>You have no favorites yet. Click the star icon to get started</div>
+      );
+    }
   
 
     return (
