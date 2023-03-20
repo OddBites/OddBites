@@ -39,10 +39,10 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 ## API Documentation
 ### menuItem endpoints
-GET /api/menuItems (gets all of the menu items)
-GET /api/menuItems?restaurantId=[id] (gets all menu items for a restaurant)
-GET /api/menuItems?menuItemId=[id]&restaurantId=[id] (gets menu item based on both restaurant id and menu item id... we shouldn't need the restaurantId to get a menu item but for now that's how it is if its a problem, just let me know and I can fix it)
-POST /api/menuItems?restaurantId=[id] (create a menu item under a certain restaurant
+- GET /api/menuItems (gets all of the menu items)
+- GET /api/menuItems?restaurantId=[id] (gets all menu items for a restaurant)
+- GET /api/menuItems?menuItemId=[id]&restaurantId=[id] (gets menu item based on both restaurant id and menu item id... we shouldn't need the restaurantId to get a menu item but for now that's how it is if its a problem, just let me know and I can fix it)
+- POST /api/menuItems?restaurantId=[id] (create a menu item under a certain restaurant
 Example body
 {
   "name": "Spaghetti Bolognese",
@@ -52,9 +52,9 @@ Example body
 )
 
 ### restaurant endpoints
-GET /api/restaurants (get all restaurants)
-GET /api/restaurants?id=[id] (get restaurant by id)
-POST /api/restaurants (create a restaurant with no menu items
+- GET /api/restaurants (get all restaurants)
+- GET /api/restaurants?id=[id] (get restaurant by id)
+- POST /api/restaurants (create a restaurant with no menu items
 Example body
 {
   "name": "Delicious Eats",
@@ -62,6 +62,6 @@ Example body
   "image": "https://example.com/images/delicious-eats.jpg"
 }
 )
-PUT /api/restaurants?id=[id] (update restaurant by id same body structure as post found above)
+- PUT /api/restaurants?id=[id] (update restaurant by id same body structure as post found above)
 
 I tested all of them manually but let me know if anything is broken and I can fix it (there might be an issue with cors that shouldn’t be a big deal, but just let me know). If you have any questions about why this is the interface I chose, I leaned into the agile pillar of responding to change over following a plan and this is where we ended up. 

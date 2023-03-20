@@ -1,14 +1,11 @@
-/** @type {import('next').NextConfig} */
-const Dotenv = require('dotenv-webpack');
-const nextConfig = {
-  reactStrictMode: true,
-  webpack: (config) => {
-    // Initialize dotenv
-    config.plugins.push(new Dotenv({ silent: true }));
-
-    return config;
+module.exports = {
+  env: {
+    GOOGLE_API_KEY: process.env.GOOGLE_API_KEY,
+    FIREBASE_API_KEY: process.env.FIREBASE_API_KEY,
+    FIREBASE_AUTH_DOMAIN: process.env.FIREBASE_AUTH_DOMAIN,
+    FIREBASE_STORAGE_BUCKET: process.env.FIREBASE_STORAGE_BUCKET,
+    FIREBASE_PROJECT_ID: process.env.FIREBASE_PROJECT_ID,
+    FIREBASE_APP_ID: process.env.FIREBASE_APP_ID,
+    FIREBASE_MESSAGING_SENDER_ID: process.env.FIREBASE_MESSAGING_SENDER_ID,
   },
-}
-
-
-module.exports = nextConfig
+};

@@ -6,8 +6,9 @@ export interface MenuItem {
   id: string;
   name: string;
   src: string;
-  description: string;
   nutrition: string;
+  description: string;
+  
 }
 
 export default async function handler(
@@ -19,21 +20,21 @@ export default async function handler(
 
   if (req.method === 'POST') {
     try {
-      const { name, src, description, nutrition } = req.body;
+      const { name, src, nutrition, description } = req.body;
       const subcollectionRef = collection(db, `restaurants/${restaurantId}/menuItems`);
       console.log(subcollectionRef);
       const newMenuItemRef = await addDoc(subcollectionRef, {
         name,
         src,
-        description,
-        nutrition
+        nutrition,
+        description
       });
       const newMenuItem: MenuItem = {
         id: newMenuItemRef.id,
         name,
         src,
-        description,
-        nutrition
+        nutrition,
+        description
       };
       return res.status(201).json(newMenuItem);
     } catch (error) {
@@ -53,8 +54,8 @@ export default async function handler(
           id: menuItemDoc.id,
           name: menuItemData.name,
           src: menuItemData.src,
-          description: menuItemData.description,
-          nutrition: menuItemData.nutrition
+          nutrition: menuItemData.nutrition,
+          description: menuItemData.description
         };
         return res.status(200).json(menuItem);
       } else {
@@ -69,8 +70,8 @@ export default async function handler(
           id: doc.id,
           name: menuItemData.name,
           src: menuItemData.src,
-          description: menuItemData.description,
-          nutrition: menuItemData.nutrition
+          nutrition: menuItemData.nutrition,
+          description: menuItemData.description
         };
         menuItems.push(menuItem);
       });
@@ -84,8 +85,8 @@ export default async function handler(
           id: doc.id,
           name: menuItemData.name,
           src: menuItemData.src,
-          description: menuItemData.description,
-          nutrition: menuItemData.nutrition
+          nutrition: menuItemData.nutrition,
+          description: menuItemData.description
         };
         menuItems.push(menuItem);
       });
