@@ -4,14 +4,13 @@ import styles from '../../styles/restaurantDetails.module.css';
 import MenuItem from './MenuItem';
 import UserReview from './UserReview';
 
-// TODO: type 'r'
-const RestaurantDetails = ({ r }:any) => {
+const RestaurantDetails = ({ r, m, u }:any) => {
   return (
     <div className={styles.split}>
       <div className={styles.left}>
         <h3>Items</h3>
         {
-          r.menu.map((item:any) => (
+          m.map((item:any) => (
             <MenuItem key={item.id} item={item} />
           ))
         }
@@ -19,7 +18,7 @@ const RestaurantDetails = ({ r }:any) => {
       <div className={styles.right}>
         <h3>Reviews</h3>
         {
-          r.reviews.map((review:any) => (
+          u.map((review:any) => (
             <UserReview key={review.id} review={review} />
           ))
         }
