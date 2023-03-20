@@ -7,7 +7,8 @@ export interface Restaurant {
   lat: number;
   lng: number;
   id: string;
-  menu: MenuItem[];
+  address: string;
+  banner: string;
 }
 
 export interface MenuItem {

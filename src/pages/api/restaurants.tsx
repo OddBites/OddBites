@@ -8,6 +8,8 @@ interface Restaurant {
   description: string;
   image: string;
   slides: {id: number, src: string}[];
+  address: string;
+  banner: string;
 }
 
 export default async function handler(
@@ -17,13 +19,15 @@ export default async function handler(
   if (req.method === 'POST') {
     // Add a new restaurant
     try {
-      const { name, description, image, slides } = req.body;
+      const { name, description, image, slides, address, banner } = req.body;
       const restaurantRef = collection(db, 'restaurants');
       const docRef = await addDoc(restaurantRef, {
         name,
         description,
         image,
-        slides
+        slides,
+        address,
+        banner
       });
       
       const restaurant: Restaurant = {
@@ -31,7 +35,9 @@ export default async function handler(
         name,
         description,
         image,
-        slides
+        slides,
+        address,
+        banner
       };
       return res.status(201).json(restaurant);
     } catch (error) {
@@ -42,20 +48,24 @@ export default async function handler(
     // Update a restaurant
     try {
       const { id } = req.query;
-      const { name, description, image, slides } = req.body;
+      const { name, description, image, slides, address, banner } = req.body;
       const docRef = doc(db, 'restaurants', id as string);
       await setDoc(docRef, {
         name,
         description,
         image,
-        slides
+        slides,
+        address,
+        banner
       });
       const updatedRestaurant: Restaurant = {
         id: id as string,
         name,
         description,
         image,
-        slides
+        slides,
+        address,
+        banner
       };
       return res.status(200).json(updatedRestaurant);
     } catch (error) {
@@ -78,7 +88,9 @@ export default async function handler(
             name: restaurantData.name,
             description: restaurantData.description,
             image: restaurantData.image,
-            slides: restaurantData.slides
+            slides: restaurantData.slides,
+            address: restaurantData.address,
+            banner: restaurantData.banner
           };
           return res.status(200).json(restaurant);
         } else {
@@ -95,7 +107,9 @@ export default async function handler(
             name: restaurantData.name,
             description: restaurantData.description,
             image: restaurantData.image,
-            slides: restaurantData.slides
+            slides: restaurantData.slides,
+            address: restaurantData.address,
+            banner: restaurantData.banner
           };
           restaurants.push(restaurant);
         });

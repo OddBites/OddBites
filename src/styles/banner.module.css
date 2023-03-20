@@ -1,0 +1,10 @@
+.container {
+    height: 24vh;
+    width: 100%;
+    background-color: white;
+}
+
+.container img {
+    width: auto;
+    height: 100%;
+}

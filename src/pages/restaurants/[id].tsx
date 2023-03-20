@@ -1,6 +1,6 @@
 import Header from '@/components/header';
 import LeftSide from '@/components/restaurant/LeftSide';
-import MapView from '@/components/restaurant/MapView';
+import Banner from '@/components/restaurant/Banner';
 import RestaurantDetails from '@/components/restaurant/RestaurantDetails';
 import { MenuItem, Restaurant, Review } from '@/types/Restaurant';
 import { useRouter } from 'next/router';
@@ -49,7 +49,7 @@ const Restaurant = () => {
           <LeftSide r={restaurant} />
         </div>
         <div className={styles.topSide}>
-          <MapView r={restaurant} />
+          <Banner r={restaurant} />
         </div>
         <div className={styles.bottomSide}>
           <RestaurantDetails r={restaurant} m={menu} u={reviews} />
