@@ -3,36 +3,31 @@ import FavoritesItem from './FavoritesItem';
 import styles from '../../styles/Favorites.module.css';
 
 const food = [
-    {
-      name: "Food 1",
-      description: "Description 1",
-      image: "https://via.placeholder.com/300x200.png?text=Food+1",
-    },
-    {
-      name: "Food 2",
-      description: "Description 2",
-      image: "https://via.placeholder.com/300x200.png?text=Food+2",
-    },
-    {
-      name: "Food 3",
-      description: "Description 3",
-      image: "https://via.placeholder.com/300x200.png?text=Food+3",
-    },
-    {
-      name: "Food 4",
-      description: "Description 4",
-      image: "https://via.placeholder.com/300x200.png?text=Food+4",
-    },
-    {
-      name: "Food 5",
-      description: "Description 5",
-      image: "https://via.placeholder.com/300x200.png?text=Food+4",
-    },
-    {
-      name: "Food 6",
-      description: "Description 6",
-      image: "https://via.placeholder.com/300x200.png?text=Food+5",
-    }
+  {
+    image: 'https://upload.wikimedia.org/wikipedia/commons/2/2a/Subway_in_Burwood_Plaza.jpg',
+    name: 'Subway',
+    description: 'Subs and Sandwiches',
+  },
+  {
+    image: 'https://media-cdn.grubhub.com/image/upload/d_search:browse-images:default.jpg/w_100,q_80,fl_lossy,dpr_2.0,c_fit,f_auto,h_100/uy4abxa8b5hubp59qod4',
+    name: 'Burger King',
+    description: 'Burgers and Fries',
+  },
+  {
+    image: 'https://goodbuddyspub.com/wp-content/uploads/sites/3/2019/12/GBP_Logo_color.png',
+    name: 'Good Buddys',
+    description: 'Western Food and Drink',
+  },
+  {
+    image: 'https://cdn.cookielaw.org/logos/63dc78c7-5612-4181-beae-47dead0569ee/666a8744-979e-4263-b2c2-093036f7ec5f/d5e0c553-41c6-41f7-b91f-be2f73c122c6/Chick-fil-A-Logo.png',
+    name: 'Chick-fil-A',
+    description: 'Chicken Sandwiches',
+  },
+  {
+    image: 'https://www.coppertoptavern.com/wp-content/uploads/sites/2/2020/01/CTT_location_vestal.jpg',
+    name: 'CopperTop Tavern',
+    description: 'Fancy Bar Foods', 
+  }
   ];
   
 
